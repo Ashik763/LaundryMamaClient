@@ -1,0 +1,16 @@
+
+.card:hover img {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+   opacity: .2;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
