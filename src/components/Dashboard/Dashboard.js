@@ -7,6 +7,7 @@ import { Table } from "react-bootstrap";
 import { UserContext } from "../../App";
 import UserData from "../ProcessPayment/UserData/UserData";
 import Slidebar from "../Slidebar/Slidebar";
+import "./Dashboard.css"
 
 const Dashboard = (props) => {
   // const {phone} = useParams();
@@ -30,12 +31,12 @@ const Dashboard = (props) => {
   }, [loggedInUser.email]);
 
   return (
-    <div  className='d-flex'>
-      <div className="col-md-3">
+    <div  className='d-flex main'>
+      <div className="col-md-3 slidebar">
         <Slidebar/>
         
       </div>
-         <div style={{height: '100vh'}}   className="col-md-8 bg-light m-5 p-4">  
+         <div style={{height: '100vh'}}   className=" order-list col-md-8 bg-light m-5 p-4">  
          <div className='d-flex align-items-center '> Order List: </div>
     <Table variant="light" className="table m-2 " style={{ borderRadius:'5%' }}>
         {

@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* @media only screen and (max-width: 768px) {
+    
+   .card{
+       width: 90%;
+       
+   }
+  } */
+  .cardName{
+    display:grid;
+    /* justify-content: ; */
+    margin: auto;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    /* grid-template-columns: auto auto auto; */
+    grid-gap:5px;
+    
+    width:80%;
+    align-content: center;
+  }
+  .cardItem{
+    margin-top:20px;
+    margin-bottom:20px;
+  }

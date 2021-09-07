@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../../App';
-// import { useContext } from 'react';
+import './Navbar.css';
+import './script.js';
 
 const Navbar = () => {
   const [loggedInUser,setLoggedInUser] = useContext(UserContext);
@@ -9,31 +10,42 @@ const Navbar = () => {
   const handleLogOut =() =>{
     setLoggedInUser({})
   }
- 
+
     return (
         <div>
-           <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand ml-5" href="/">Mama Laundry</a>
+           <nav   className="navbar navbar-expand-lg navbar-light bg-light">
+           <div>
+               <a className="brand-title link" href="/">Mama Laundry</a>
+           </div>
+           <a style={{backgroundColor:"black"}} id="body" href="#" className="toggle-button"> 
+           <span className="bar">  </span>
+           <span className="bar"> </span>
+           <span className="bar">  </span>
+           <span className="bar"> </span>
+           <span className="bar"> </span>
+           <span className="bar"> </span>
+        
+            </a>
 
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav ml-auto">
-      <li className="nav-item active">
-        <Link className="nav-link mr-5" to="/">Home </Link>
+  <div className="navbar-links" >
+    <ul>
+      <li >
+        <Link className="link" to="/">Home </Link>
       </li>
-      <li className="nav-item active">
-        <Link className="nav-link mr-5" to="/userInfo/:email">Dashboard </Link>
+      <li>
+        <Link className="link" to="/userInfo/:email">Dashboard </Link>
       </li>
-      <li className="nav-item active">
-        <Link className="nav-link mr-5" to="/laundryService">Laundry Services </Link>
+      <li >
+        <Link className="link"  to="/laundryService">Laundry Services </Link>
       </li>
-      <li className="nav-item active">
-        <Link className="nav-link mr-5" to="/WriteReview">Reviews </Link>
+      <li>
+        <Link className="link" to="/WriteReview">Reviews </Link>
       </li>
-      <li className="nav-item active">
-        <Link className="nav-link mr-5" to="/admin">Admin </Link>
+      <li>
+        <Link className="link" to="/admin">Admin </Link>
       </li>
-      <li className="nav-item active">
-     <Link className="nav-link mr-5" to="/login"> {loggedInUser.email ?<span onClick={handleLogOut}> Log Out  </span>  :  <span> Log In </span> }</Link>
+      <li>
+     <Link  className="link" to="/login"> {loggedInUser.email ?<span onClick={handleLogOut}> Log Out  </span>  :  <span> Log In </span> }</Link>
         
       </li>
       

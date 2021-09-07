@@ -5,13 +5,15 @@ import Footer from '../../Footer/Footer';
 import Reviews from '../../Reviews/Reviews';
 import Services from '../../Services/Services';
 import Header from '../Header/Header';
-import Navbar from '../Header/Navbar/Navbar';
+//import Navbar from '../Header/Navbar/Navbar';
+import './Home.css';
 
 const Home = () => {
     return (
-        <div>
+        <div >
            
             <Header/>
+          
             <BusinessInfo/>
             <Services/>
             <Reviews/>

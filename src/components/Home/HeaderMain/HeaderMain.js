@@ -18,7 +18,7 @@ const HeaderMain = () => {
                 <small className="mt-5"><b>Be sure your clothes get the right treatment!</b>  </small>
                 
                 </div>
-                <div className="col-md-5 m-5"> 
+                <div className="col-md-5 m-5 container"> 
                 <img src={Pic} className="img-fluid" style={{height:"400px",width:"100%"}} alt="" />
                 </div>
 

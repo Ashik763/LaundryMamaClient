@@ -1,14 +1,16 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import './Blog.css';
 
 const Blog = ({data}) => {
     // console.log(data);
     return (
-        <Card className="col-md-3 m-5" style={{ width: '18rem' }}>
+       
+        <Card className="cardItem"  style={{ width: '18rem' }}>
         {/* <Card.Img variant="top" src={data.img}/> */}
         <Card.Body>
-          <Card.Title>  
+          <Card.Title className="title">  
             {data.title}    </Card.Title>
           <Card.Text>
           {data.description}
@@ -16,6 +18,7 @@ const Blog = ({data}) => {
           <Button> Continue reading ... </Button>
         </Card.Body>
       </Card>
+      
     );
 };
 

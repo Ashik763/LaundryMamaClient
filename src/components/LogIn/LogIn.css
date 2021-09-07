@@ -19,3 +19,13 @@
   
   width: 50%;
 }
+@media (max-width:700px){
+ .first-div{
+  position: relative;
+  
+
+  bottom:20%;
+  left:0%;
+
+ }
+}
