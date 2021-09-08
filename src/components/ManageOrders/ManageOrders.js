@@ -5,6 +5,7 @@ import { Table } from 'react-bootstrap';
 import { set } from 'react-hook-form';
 import Slidebar from '../Slidebar/Slidebar';
 import AllOrdersDetail from './AllOrdersDetail/AllOrdersDetail';
+import './ManageOrders.css';
 
 const ManageOrders = () => {
     const [allOrders,setAllOrders] = useState([]);
@@ -29,8 +30,8 @@ const ManageOrders = () => {
                 <th>Orderer's Name</th>
                 <th>Service Name</th>
                 <th>Service Price</th>
-                <th className="text-center">Description</th>
-                <th> Payment Type </th>
+                <th className="text-center description">Description</th>
+                <th className="payment-type"> Payment Type </th>
                 <th> State </th>
               </tr>
              

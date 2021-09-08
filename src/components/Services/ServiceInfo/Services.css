@@ -1,0 +1,28 @@
+@media (max-width:700px){
+    *{
+        box-sizing: border-box;
+    }
+    .title{
+        /* color: red; */
+    }
+    .card{
+        display:grid;
+        grid-template-rows: auto auto;
+        position: relative;
+        left:17%;
+        width: 100rem;
+    }
+    .card .img-fluid{
+       
+      height:auto;
+    }
+
+
+
+
+
+
+
+
+  
+}

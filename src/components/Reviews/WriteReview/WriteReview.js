@@ -53,7 +53,7 @@ const WriteReview = () => {
               {...register("name")}
             />
             <textarea
-              style={{ width: "40%", height: "120px" }}
+              style={{ width: "80%", height: "100px" }}
               className="form-control m-2"
               name="description"
               placeholder="description"

@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import { Link, useHistory } from 'react-router-dom';
 import './ServiceInfo.css';
 
+
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 // import dry from './dry-clean.jpg';
@@ -43,7 +44,7 @@ const ServiceInfo = (props) => {
           <Card.Img className='img-fluid' style={{borderRadius: '5%'}} variant="top" src={`data:image/png;base64,${image?.img}`}/> 
 
         <Card.Body>
-          <Card.Title>  
+          <Card.Title className='title'>  
             {name}    </Card.Title>
             <Card.Text style={{color:'CadetBlue',fontSize:'30px'}}>
          Price:$  {price}

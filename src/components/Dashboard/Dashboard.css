@@ -20,13 +20,36 @@
   } */
  
   .order-list{
-    width: 80%;
+    width: 100%;
+    position: relative;
+    left: -15px;
      
   }
-  
-   }
-   .a:hover{
+  .order-list .table{
+      padding:0px;
+      margin:0px;
+    width: 50%;
+    position: relative;
+    left:-10px;
+     
+  }
+
+
+  .a:hover{
     text-decoration: none;
     font-size: 100%;
     border-bottom: 1px solid gray;
+  }
+.description{
+    display:none;
+}
+
+
+
+
+
+
+
+
+  
 }

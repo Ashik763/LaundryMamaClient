@@ -1,6 +1,7 @@
 import React from 'react';
 import Slidebar from '../Slidebar/Slidebar';
 import { useForm } from "react-hook-form";
+import './MakeAdmin.css';
 
 const MakeAdmin = () => {
     const { register, handleSubmit, errors } = useForm();
@@ -19,11 +20,11 @@ const MakeAdmin = () => {
     return (
         <div className='d-flex'>
           
-            <div className='col-md-3'> 
+            <div className='col-md-3 slidebar'> 
                 <Slidebar/>
             </div>
-            <div className='col-md-8 m-5 p-5'>
-           <div style={{color:'dodgerblue',fontSize:'150%'}} className='text-center'> Make Admin </div>
+            <div className='admin-form col-md-8 m-5 p-5'>
+           <div style={{color:'dodgerblue',fontSize:'150%'}} className='text-center make-admin'> Make Admin </div>
             <form className="p-5" onSubmit={handleSubmit(onSubmit)}>
           {/* <div className="form-group "> */}
             <input

@@ -7,7 +7,7 @@ const UserData = ({userData}) => {
                 <tr>
                   <td>{userData.serviceName}</td>
       <td>${userData.servicePrice}</td>
-      <td >{userData.serviceDescription}</td>
+      <td className="description" >{userData.serviceDescription}</td>
       <td>{userData.type}</td>
       <td>{userData.state ? userData.state : 'Pending'}</td>
                 </tr>

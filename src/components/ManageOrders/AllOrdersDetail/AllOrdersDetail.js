@@ -39,8 +39,8 @@ const AllOrdersDetail = ({allOrders}) => {
             <td>{allOrders.displayName}</td>
             <td>{allOrders.serviceName}</td>
             <td>${allOrders.servicePrice}</td>
-            <td >{allOrders.serviceDescription}</td>
-            <td>{allOrders.type}</td>
+            <td className="description" >{allOrders.serviceDescription}</td>
+            <td className="payment-type">{allOrders.type}</td>
 
 
             <td>   

@@ -1,0 +1,21 @@
+@media (max-width:700px){
+    *{
+        box-sizing: border-box;
+    }
+   .payment-type{
+       display:none;
+   }
+   .table{
+      
+       position: relative;
+       left: -50px;
+   }
+
+
+
+
+
+
+
+  
+}

@@ -7,6 +7,7 @@ import curtain from './curtain.jpg';
 import ServiceInfo from './ServiceInfo/ServiceInfo';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import './ServiceInfo/Services.css'
 
 
 const Services = (e) => {

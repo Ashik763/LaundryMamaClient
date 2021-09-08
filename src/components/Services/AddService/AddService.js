@@ -4,6 +4,7 @@ import { useContext } from 'react';
 import { useForm } from "react-hook-form";
 import { UserContext } from '../../../App';
 import Slidebar from '../../Slidebar/Slidebar';
+import './AddService.css'
 
 const AddService = () => {
   const [loggedInUser,setLoggedInUser] = useContext(UserContext);
@@ -11,7 +12,7 @@ const AddService = () => {
   fetch(`http://localhost:5000/checkAdmin/${loggedInUser?.email}`)
     .then(res => res.json())
     .then(data => {
-      // console.log(data);
+   
       setAdmin(data)})
   
 
@@ -23,11 +24,9 @@ const AddService = () => {
       formData.append('name', data.name);
       formData.append('price', data.price);
       formData.append('description', data.description);
-      // let data2 =data.img;
+     
       console.log(formData);
-      // data2 = {data2,...data}
-      // console.log(data2);
-      // const data3 = {...data,...data2}
+     
       fetch('http://localhost:5000/addService',{
         method: 'POST',
         body: formData
@@ -62,8 +61,8 @@ const AddService = () => {
             />
             <textarea
             type="textarea"
-              style={{ width: "40%", height: "120px" }}
-              className="form-control m-2"
+              style={{ width: "70%", height: "120px" }}
+              className="description2 form-control m-2"
               name="description"
               placeholder="description"
               {...register("description")}

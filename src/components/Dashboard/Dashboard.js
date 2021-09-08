@@ -46,7 +46,7 @@ const Dashboard = (props) => {
               <tr>
                 <th>Service Name</th>
                 <th>Service Price</th>
-                <th className="text-center">Description</th>
+                <th className="text-center description">Description</th>
                 <th> Payment Type </th>
                 <th> State </th>
               </tr>
